@@ -1,7 +1,8 @@
-# kickstart.nvim
+# Neovim config
 
 ## Introduction
 
+This is a configuration, that alters the functionality of a Neovim configuration. It is loosely based on the Kic
 A starting point for Neovim that is:
 
 * Small
@@ -12,16 +13,10 @@ A starting point for Neovim that is:
 
 ## Installation
 
-### Install Neovim
-
-Kickstart.nvim targets *only* the latest
-['stable'](https://github.com/neovim/neovim/releases/tag/stable) and latest
-['nightly'](https://github.com/neovim/neovim/releases/tag/nightly) of Neovim.
-If you are experiencing issues, please make sure you have the latest versions.
-
 ### Install External Dependencies
 
 External Requirements:
+- ['Neovim'](https://github.com/neovim/neovim/releases/tag/stable)
 - Basic utils: `git`, `make`, `unzip`, C Compiler (`gcc`)
 - [ripgrep](https://github.com/BurntSushi/ripgrep#installation)
 - Clipboard tool (xclip/xsel/win32yank or other depending on platform)
@@ -36,7 +31,7 @@ External Requirements:
 > See [Install Recipes](#Install-Recipes) for additional Windows and Linux specific notes
 > and quick install snippets
 
-### Install Kickstart
+### Install Configuration
 
 > **NOTE**
 > [Backup](#FAQ) your previous configuration (if any exists)
@@ -45,29 +40,16 @@ Neovim's configurations are located under the following paths, depending on your
 
 | OS | PATH |
 | :- | :--- |
-| Linux, MacOS | `$XDG_CONFIG_HOME/nvim`, `~/.config/nvim` |
+| Linux | `~/.config/nvim` |
 | Windows (cmd)| `%userprofile%\AppData\Local\nvim\` |
 | Windows (powershell)| `$env:USERPROFILE\AppData\Local\nvim\` |
+| MacOS | `$XDG_CONFIG_HOME/nvim` |
 
-#### Recommended Step
-
-[Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repo
-so that you have your own copy that you can modify, then install by cloning the
-fork to your machine using one of the commands below, depending on your OS.
-
-> **NOTE**
-> Your fork's url will be something like this:
-> `https://github.com/<your_github_username>/kickstart.nvim.git`
-
-#### Clone kickstart.nvim
-> **NOTE**
-> If following the recommended step above (i.e., forking the repo), replace
-> `nvim-lua` with `<your_github_username>` in the commands below
-
-<details><summary> Linux and Mac </summary>
+#### Clone Neovim Configuration
+<details><summary> Linux </summary>
 
 ```sh
-git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone https://github.com/AverageHomosapien/Neovim-Configuration.nvim.git ~/.config/nvim
 ```
 
 </details>
@@ -77,13 +59,21 @@ git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HO
 If you're using `cmd.exe`:
 
 ```
-git clone https://github.com/nvim-lua/kickstart.nvim.git %userprofile%\AppData\Local\nvim\
+git clone https://github.com/AverageHomosapien/Neovim-Configuration.nvim.git %userprofile%\AppData\Local\nvim\
 ```
 
 If you're using `powershell.exe`
 
 ```
-git clone https://github.com/nvim-lua/kickstart.nvim.git $env:USERPROFILE\AppData\Local\nvim\
+git clone https://github.com/AverageHomosapien/Neovim-Configuration.nvim.git $env:USERPROFILE\AppData\Local\nvim\
+```
+
+</details>
+
+<details><summary> Mac </summary>
+
+```sh
+git clone https://github.com/AverageHomosapien/Neovim-Configuration.nvim.git $XDG_CONFIG_HOME/nvim
 ```
 
 </details>
@@ -110,10 +100,6 @@ examples of adding popularly requested plugins.
 
 ### FAQ
 
-* What should I do if I already have a pre-existing neovim configuration?
-  * You should back it up and then delete all associated files.
-  * This includes your existing init.lua and the neovim files in `~/.local`
-    which can be deleted with `rm -rf ~/.local/share/nvim/`
 * Can I keep my existing configuration in parallel to kickstart?
   * Yes! You can use [NVIM_APPNAME](https://neovim.io/doc/user/starting.html#%24NVIM_APPNAME)`=nvim-NAME`
     to maintain multiple configurations. For example, you can install the kickstart
