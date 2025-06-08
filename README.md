@@ -46,7 +46,7 @@ Neovim's configurations are located under the following paths, depending on your
 <details><summary> Linux </summary>
 
 ```sh
-git clone https://github.com/AverageHomosapien/Neovim-Configuration.nvim.git ~/.config/nvim
+git clone https://github.com/AverageHomosapien/Neovim-Configuration.git ~/.config/nvim
 ```
 
 </details>
@@ -56,13 +56,13 @@ git clone https://github.com/AverageHomosapien/Neovim-Configuration.nvim.git ~/.
 If you're using `cmd.exe`:
 
 ```
-git clone https://github.com/AverageHomosapien/Neovim-Configuration.nvim.git %userprofile%\AppData\Local\nvim\
+git clone https://github.com/AverageHomosapien/Neovim-Configuration.git %userprofile%\AppData\Local\nvim\
 ```
 
 If you're using `powershell.exe`
 
 ```
-git clone https://github.com/AverageHomosapien/Neovim-Configuration.nvim.git $env:USERPROFILE\AppData\Local\nvim\
+git clone https://github.com/AverageHomosapien/Neovim-Configuration.git $env:USERPROFILE\AppData\Local\nvim\
 ```
 
 </details>
@@ -70,7 +70,7 @@ git clone https://github.com/AverageHomosapien/Neovim-Configuration.nvim.git $en
 <details><summary> Mac </summary>
 
 ```sh
-git clone https://github.com/AverageHomosapien/Neovim-Configuration.nvim.git $XDG_CONFIG_HOME/nvim
+git clone https://github.com/AverageHomosapien/Neovim-Configuration.git $XDG_CONFIG_HOME/nvim
 ```
 
 </details>
