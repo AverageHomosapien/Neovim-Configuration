@@ -2,14 +2,11 @@
 
 ## Introduction
 
-This is a configuration, that alters the functionality of a Neovim configuration. It is loosely based on the Kic
-A starting point for Neovim that is:
+This is a Neovim configuration, that alters the functionality to provide a solid working Neovim environment. It is loosely based on the [Neovim Kickstart](https://github.com/nvim-lua/kickstart.nvim) configuration - but provides a higher level of functionality, and less of a tutorial. This expands the initial configuration, and gives a solid config that is:
 
-* Small
-* Single-file
-* Completely Documented
-
-**NOT** a Neovim distribution, but instead a starting point for your configuration.
+* Good level of functionality
+* Decomposed into several files - following best practice
+* Documented
 
 ## Installation
 
