@@ -146,6 +146,13 @@ vim.keymap.set('n', '<leader>bl', ':ls<cr>', { desc = 'List buffers' })
 -- <cr> is used as the 'enter' action
 vim.keymap.set('n', '<leader>ce', ':e $MYVIMRC<cr>', { desc = 'Configuration Edit' })
 
+-- Some nice keymaps used for changing the working directory
+vim.keymap.set('n', '<leader>cd', ':cd %:p:h<cr>', { desc = 'Change to Working Directory' })
+
+-- https://stackoverflow.com/questions/1497958/how-do-i-use-vim-registers
+vim.keymap.set('n', '<leader>ra', ':registers<cr>', { desc = 'List the content in all registers' })
+vim.keymap.set('n', '<leader>rp', '"*p', { desc = 'Register Paste the content in the system register' })
+
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
 --  See `:help vim.highlight.on_yank()`
